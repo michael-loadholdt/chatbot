@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	
+	<category>
+	    <pattern>CYBER</pattern>
+	    <template>
+	        <link>
+	            <text>Click here for more information about a career as a Cyber Security Analyst</text>
+	            <url>https://www.rasmussen.edu/degrees/technology/blog/becoming-cyber-security-analyst/#:~:text=Cyber%20security%20analysts%20(also%20called,for%20any%20breaches%20in%20security.</url>
+            </link>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>CYBERQUESTION2</pattern>
+        <template>Your career recommendation is: CYBERSECURITY ANALYST. 
+        <link>
+            <text>Click here for more informaiton.</text>
+            <url>https://www.rasmussen.edu/degrees/technology/blog/becoming-cyber-security-analyst/#:~:text=Cyber%20security%20analysts%20(also%20called,for%20any%20breaches%20in%20security.</url>
+        </link>
+        </template>
+    </category>
+    
+</aiml>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<category>
+	    <pattern>HELLO</pattern>
+	    <template>Welcome! I am your guide. I can provide information about different career paths.  If you do not know which path interests you, I can also help you decide.<br></br> To continue, please select an option:
+            <button>
+                <text>Learn about career choices</text>
+                <postback>choices</postback>
+            </button>
+            <button>
+                <text>Help me choose</text>
+                <postback>help</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CHOICES</pattern>
+        <template>Here are a few options.  Select which you would like to learn about.
+            <button>
+                <text>Web Developer</text>
+                <postback>WEB</postback>
+            </button>
+            <button>
+                <text>User Interface Designer</text>
+                <postback>UI</postback>
+            </button>
+            <button>
+                <text>Software Developer</text>
+                <postback>SOFTWAREDEV</postback>
+            </button>
+            <button>
+                <text>Database Administrator</text>
+                <postback>DBA</postback>
+            </button>
+            <button>
+                <text>Cybersecurity Analyst</text>
+                <postback>CYBER</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HELP</pattern>
+        <template>I'll now ask you some questions to determine which career may be right for you.
+        <br><br></br></br>
+        Do you enjoy the process of design but have to fight through coding an application?
+            <button>
+                <text>Yes</text>
+                <postback>WEBQUESTION1</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>DEVQUESTION1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBQUESTION1</pattern>
+        <template>Are you experienced with creating web applications or API's?
+            <button>
+                <text>Yes</text>
+                <postback>WEBQUESTION2</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>CYBERQUESTION1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DEVQUESTION1</pattern>
+        <template>Do you enjoy coding an application in a development environment?
+            <button>
+                <text>Yes</text>
+                <postback>DEVQUESTION2</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>DBAQUESTION1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBQUESTION2</pattern>
+        <template>Are you interested in primarily web based applications?
+            <button>
+                <text>Yes</text>
+                <postback>WEBQUESTION3</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>UIQUESTION1</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CYBERQUESTION1</pattern>
+        <template>Do you like networking and security related topics?
+            <button>
+                <text>Yes</text>
+                <postback>CYBERQUESTION2</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>Based on your responses I am unable to advise a specific career.  Please Try again.</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DEVQUESTION2</pattern>
+        <template>Do you enjoy conceiving, creating, installing, testing, and maintianing software applications?
+            <button>
+                <text>Yes</text>
+                <postback>DEVQUESITON3</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>CYBERQUESTION2</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DBAQUESTION1</pattern>
+        <template>Are you excited about databases and the relationships between entities?
+            <button>
+                <text>Yes</text>
+                <postback>DBAQUESTION2</postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>DEVQUESTION2</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+		
+	<category>
+	    <pattern>WEB</pattern>
+	    <template>
+	        <link>
+	            <text>Click here for more information about a career as a Web Developer.</text>
+	            <url>https://www.careerexplorer.com/careers/web-developer/</url>
+            </link>
+	    </template>
+    </category>
+    
+    <category>
+        <pattern>CYBERQUESTION2</pattern>
+        <template>Your career recommendation is: WEB DEVELOPER. 
+        <link>
+            <text>Click here for more information</text>
+            <url>https://www.careerexplorer.com/careers/web-developer/</url>
+        </link>
+        </template>
+    </category>
+    
+</aiml>
